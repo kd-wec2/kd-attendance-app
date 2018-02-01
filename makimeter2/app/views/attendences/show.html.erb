@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @attendence.user_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @attendence.date %>
+</p>
+
+<p>
+  <strong>First:</strong>
+  <%= @attendence.first %>
+</p>
+
+<p>
+  <strong>Second:</strong>
+  <%= @attendence.second %>
+</p>
+
+<p>
+  <strong>Third:</strong>
+  <%= @attendence.third %>
+</p>
+
+<p>
+  <strong>Forth:</strong>
+  <%= @attendence.forth %>
+</p>
+
+<p>
+  <strong>Fifth:</strong>
+  <%= @attendence.fifth %>
+</p>
+
+<%= link_to 'Edit', edit_attendence_path(@attendence) %> |
+<%= link_to 'Back', attendences_path %>

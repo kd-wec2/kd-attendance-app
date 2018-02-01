@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Attendences</h1>
+
+<table class="aaa">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Date</th>
+      <th>First</th>
+      <th>Second</th>
+      <th>Third</th>
+      <th>Forth</th>
+      <th>Fifth</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @attendences.each do |attendence| %>
+      <tr>
+        <td><%= attendence.user_id %></td>
+        <td><%= attendence.date %></td>
+        <td><%= attendence.first %></td>
+        <td><%= attendence.second %></td>
+        <td><%= attendence.third %></td>
+        <td><%= attendence.forth %></td>
+        <td><%= attendence.fifth %></td>
+        <td><%= link_to 'Show', attendence %></td>
+        <td><%= link_to 'Edit', edit_attendence_path(attendence) %></td>
+        <td><%= link_to 'Destroy', attendence, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Attendence', new_attendence_path %>

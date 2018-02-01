@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  date: 2018-01-31
+  first: 1
+  second: 1
+  third: 1
+  forth: 1
+  fifth: 1
+
+two:
+  user_id: 1
+  date: 2018-01-31
+  first: 1
+  second: 1
+  third: 1
+  forth: 1
+  fifth: 1

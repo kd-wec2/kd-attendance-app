@@ -1,0 +1,52 @@
+<%= form_with(model: attendence, local: true) do |form| %>
+  <% if attendence.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(attendence.errors.count, "error") %> prohibited this attendence from being saved:</h2>
+
+      <ul>
+      <% attendence.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id, id: :attendence_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date, id: :attendence_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first %>
+    <%= form.number_field :first, id: :attendence_first %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second %>
+    <%= form.number_field :second, id: :attendence_second %>
+  </div>
+
+  <div class="field">
+    <%= form.label :third %>
+    <%= form.number_field :third, id: :attendence_third %>
+  </div>
+
+  <div class="field">
+    <%= form.label :forth %>
+    <%= form.number_field :forth, id: :attendence_forth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fifth %>
+    <%= form.number_field :fifth, id: :attendence_fifth %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

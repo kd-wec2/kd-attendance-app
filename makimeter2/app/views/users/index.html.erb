@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>出席管理表</h1>
+
+<table class="aaa">
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>コマ数</th>
+      <th>遅刻数</th>
+      <th>欠課</th>
+      <th>出席率</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= "#{user.attendence_score}時間" %></td>
+        <td><%= "#{user.late_score}回" %></td>
+        <td><%= "#{user.cutting_class_score}回" %></td>
+        <td class="deadline" ><%= "#{user.attendence_percentage}%" %></td>
+
+        <!-- <td><%= link_to 'Show', user %></td> -->
+        <!-- <td><%= link_to 'Edit', edit_user_path(user) %></td> -->
+        <!-- <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!-- <%= link_to 'New User', new_user_path %> -->

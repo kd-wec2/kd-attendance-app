@@ -1,0 +1,23 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  font-size: 54px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+table, th, td {
+  font-size: 18px;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+td, th {
+  padding: 5px;
+}
